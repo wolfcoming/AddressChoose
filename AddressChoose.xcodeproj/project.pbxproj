@@ -30,6 +30,7 @@
 		241CD3A221F2CFF100A56055 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 241CD39521F2CFF100A56055 /* MJPropertyKey.m */; };
 		241CD3A321F2CFF100A56055 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 241CD39921F2CFF100A56055 /* MJFoundation.m */; };
 		241CD3AE21F2D10100A56055 /* areaCodeList.json in Resources */ = {isa = PBXBuildFile; fileRef = 241CD3AD21F2D10100A56055 /* areaCodeList.json */; };
+		244F492921F6DF67006BF3B4 /* hkgf.gif in Resources */ = {isa = PBXBuildFile; fileRef = 244F492821F6DF67006BF3B4 /* hkgf.gif */; };
 		2494813221F5C2B200996AC9 /* CEAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2494813121F5C2B200996AC9 /* CEAddressModel.m */; };
 		2494813521F5C2FA00996AC9 /* CEAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2494813421F5C2FA00996AC9 /* CEAddressView.m */; };
 		2494813821F5C32200996AC9 /* CEAddressTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2494813721F5C32200996AC9 /* CEAddressTableView.m */; };
@@ -96,6 +97,7 @@
 		241CD39821F2CFF100A56055 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
 		241CD39921F2CFF100A56055 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
 		241CD3AD21F2D10100A56055 /* areaCodeList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = areaCodeList.json; sourceTree = "<group>"; };
+		244F492821F6DF67006BF3B4 /* hkgf.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hkgf.gif; sourceTree = "<group>"; };
 		2494813021F5C2B200996AC9 /* CEAddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEAddressModel.h; sourceTree = "<group>"; };
 		2494813121F5C2B200996AC9 /* CEAddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEAddressModel.m; sourceTree = "<group>"; };
 		2494813321F5C2FA00996AC9 /* CEAddressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEAddressView.h; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		241CD34621F2CFAE00A56055 /* AddressChoose */ = {
 			isa = PBXGroup;
 			children = (
+				244F492721F6DF50006BF3B4 /* Files */,
 				241CD37C21F2CFCF00A56055 /* AddressView */,
 				241CD34721F2CFAE00A56055 /* AppDelegate.h */,
 				241CD34821F2CFAE00A56055 /* AppDelegate.m */,
@@ -257,6 +260,14 @@
 				2494813421F5C2FA00996AC9 /* CEAddressView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		244F492721F6DF50006BF3B4 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				244F492821F6DF67006BF3B4 /* hkgf.gif */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +377,7 @@
 				241CD38121F2CFDC00A56055 /* 关闭.png in Resources */,
 				241CD3AE21F2D10100A56055 /* areaCodeList.json in Resources */,
 				241CD38221F2CFDC00A56055 /* 关闭@3x.png in Resources */,
+				244F492921F6DF67006BF3B4 /* hkgf.gif in Resources */,
 				241CD35421F2CFB000A56055 /* Assets.xcassets in Resources */,
 				241CD38321F2CFDC00A56055 /* 关闭@2x.png in Resources */,
 				241CD34F21F2CFAE00A56055 /* Main.storyboard in Resources */,
