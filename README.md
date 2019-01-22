@@ -5,7 +5,7 @@
 
 其次上个GIF预览图。
 
-https://github.com/ChinaCodingCom/AddressChoose/blob/master/AddressChoose/Files/hkgf.gif
+![Image text](https://github.com/ChinaCodingCom/AddressChoose/blob/master/AddressChoose/Files/hkgf.gif)
 
 
 最后代码如上。
