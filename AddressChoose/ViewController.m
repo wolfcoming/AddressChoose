@@ -17,6 +17,7 @@
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) CEAddressView *addressView;
 
 @end
 
@@ -24,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, SCREEN_WIDTH -200, 50)];
@@ -41,14 +42,20 @@
 
 - (void)buttonClick{
     
-    CEAddressView *addressView = [[CEAddressView alloc] initWithFrame:CGRectMake(0, 0, [UIApplication sharedApplication].keyWindow.frame.size.width, [UIApplication sharedApplication].keyWindow.frame.size.height)];
-    addressView.block = ^(NSDictionary *addressDic){
+    if (!self.addressView) {
+        
+        self.addressView = [[CEAddressView alloc] initWithFrame:CGRectMake(0, 0, [UIApplication sharedApplication].keyWindow.frame.size.width, [UIApplication sharedApplication].keyWindow.frame.size.height)];
+    }
+    
+    __weak typeof(self) weakSelf = self;
+    
+    self.addressView.block = ^(NSDictionary *addressDic){
         
         NSLog(@"addressDic = %@",addressDic);
         //[self.btn setTitle:addressStr forState:UIControlStateNormal];
-        [self.button setTitle:[NSString stringWithFormat:@"%@ %@ %@",addressDic[@"province"],addressDic[@"city"],addressDic[@"area"]] forState:UIControlStateNormal];
+        [weakSelf.button setTitle:[NSString stringWithFormat:@"%@ %@ %@",addressDic[@"province"],addressDic[@"city"],addressDic[@"area"]] forState:UIControlStateNormal];
     };
-    [addressView showView:self.view];
+    [self.addressView showView:self.view];
     
 }
 
